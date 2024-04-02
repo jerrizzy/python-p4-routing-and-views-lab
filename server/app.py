@@ -17,7 +17,7 @@ def print_string(parameter):
 def count(parameter):
     result = ''
     for num in range(parameter):
-        result += str(num) + '\n'
+        result += str(num) + '\n' # '\n' returns to a new line
     return result, 200
 
 @app.route('/math/<int:num1>/<string:operation>/<int:num2>')
